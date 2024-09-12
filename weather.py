@@ -12,7 +12,13 @@ def get_current_weather(city="Charlotte"):
 
     return weather_data
 
+# If module is called directly, print at terminal window
 if __name__ == "__main__":
     print("\n***Get Current Weather Conditions***\n")
 
-    city 
+    city = input("\nPlease enter a city name: ")
+
+    weather_data = get_current_weather(city)
+
+    print("\n")
+    pprint(weather_data)
